@@ -1,16 +1,19 @@
 import turtle 
 
-sides= input ("enter the number of sides:")
-length = input ("enter the length of sides")
 
-pen = turtle.Turtle()
-pen.color("orange")
+
+sides = int (input ("enter the number of sides:"))
+length = int(input ("enter the length of sides:"))
+
+my_turtle = turtle.Turtle()
+my_turtle.color("orange")
+
 
 window = turtle.Screen()
 
 for S in range (sides):
-    pen.forward(length)
-    pen.right  (360/sides)
+    my_turtle.forward(length)
+    my_turtle.right  (360/sides)
 
 
 
