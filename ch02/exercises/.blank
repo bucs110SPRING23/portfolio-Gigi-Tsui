@@ -1,3 +1,0 @@
-boolean is a expression that ends with a true or false
-print(1 is 5/5) wouldn't work cause 5/5 is a float and 1 is an int
-if you put print (1 is 5//5) then it would work 
