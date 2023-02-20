@@ -2,7 +2,7 @@ import turtle
 
 
 
-sides = int (input ("enter the number of sides:"))
+sides = int(input ("enter the number of sides:"))
 length = int(input ("enter the length of sides:"))
 
 my_turtle = turtle.Turtle()
@@ -15,13 +15,8 @@ for S in range (sides):
     my_turtle.forward(length)
     my_turtle.right  (360/sides)
 
-
-
-
 sides = 6
 print((sides-2)*180/sides)
-
-
 
 window.exitonclick()
 
