@@ -1,25 +1,24 @@
 import random
 import pygame
-print(random.randint(1,10))
+correct_answer = print(random.randint(1,10))
 
 user_guess = input("Guess a number between 1 and 10")
 guess = int(user_guess)
 
 
-
-
-
-    print("You Entered:", user_guess)
-    print("The correct patter was", colors)
-
-    if user_guess == colors:
-        print("Correct! You win.")
-    else:
-        print("Were you even paying attention?")
-
+guess = ""
+if guess == user_guess:
+    print ("Correct! You Win.")
     pygame.quit()
+elif guess < user_guess:
+    print ("the number is higher,")
+else:
+    print("The number is lower")
+
+limit = 3
+for i in range(limit):
+    if (i == limit - 1, limit == 0):
+        print ("game over")
 
 
-
-    pygame.init()
-screen = pygame.display.set_mode()
+pygame.quit()
