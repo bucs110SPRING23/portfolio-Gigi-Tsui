@@ -1,20 +1,38 @@
 import turtle
 import random
 
-screen = turtle.Screen()
-turt1=turtle.RawTurtle(screen)
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(0)
+
+window = turtle.Screen()
+window.bgcolor("pink")
+
+distance = 10
+angle = 90
+is_in_screen = True
+
+colors = ["red", "green", "blue", "purple", "red"]
+
+while is_in_screen:
+    coin = random.randrange (0, 2)
+    if coin: #heads
+        t.right(angle)
+    else: #tails
+        t.left(angle)
+    t.forward(distance)
+    
+    turtleX = t.xcor()
+    turtleY = t.ycor()
+    # x,y = t.pos()
+
+    x_range = window.window_width() / 2
+    y_range = window.window_height() / 2
+
+    t.color(random.choice(colors))
+
+    if abs(turtleX) > x_range or abs(turtleY) > y_range:
+        is_in_screen = False
 
 
-yes = True
-while yes:
-    sides = ["head", "tails"]
-    flip= random.choice(sides)
-    if flip == "heads":
-        turt1.left(90)
-    else:
-        turt1.right(90)
-    turt1.forward(50)
-    turt1.speed(1)
-
-
-screen.exitonclick()
+window.exitonclick()
