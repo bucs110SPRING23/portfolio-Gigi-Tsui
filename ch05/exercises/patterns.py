@@ -8,7 +8,7 @@ def rstar_pyramid(rows):
         print("*" + 1)
 
 
-levels = (input("what is pyramid height:"))
+levels = int(input("what is pyramid height:"))
 
 star_pyramid(levels)
 rstar_pyramid(levels)
