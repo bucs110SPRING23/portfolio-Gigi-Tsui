@@ -14,7 +14,7 @@ def draw_flowers(t, petals, radius, angle):
         t.left(360 /petals)
         
 
-def draw_stem(t, x, y):
+def draw_stem(t, x, y): 
     t.penup()
     t.goto(-100, y)
     t.pendown()
