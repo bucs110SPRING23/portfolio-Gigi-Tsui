@@ -30,4 +30,4 @@ def main():
     draw_flowers(t, 20, 100, 40)
     turtle.exitonclick()
 
-main()
+main() 
