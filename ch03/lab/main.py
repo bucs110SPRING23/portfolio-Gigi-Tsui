@@ -28,7 +28,7 @@ for i in range (10):
     dart_x = random.randrange(0, 700)
     distance_from_center = math.hypot(center-dart_x, center-dart_y) #the distance formula
     # is_in_circle = distance_from_center <= width/2 #screen width
-    if distance_from_center <= 700/2:
+    if distance_from_center <= 340:
         is_in_circle = True
         pygame.draw.circle(screen, "green", (dart_x, dart_y), 10)
     else:
