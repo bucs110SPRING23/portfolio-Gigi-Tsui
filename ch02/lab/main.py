@@ -63,6 +63,7 @@ for num_sides in shapelist:
         y = ypos + side_length * math.sin(radians)
         point.append ([x,y])
         
+    screen.fill("white")
     pygame.draw.polygon(screen, "red", point)
     pygame.display.flip()
     pygame.time.wait(2000)
