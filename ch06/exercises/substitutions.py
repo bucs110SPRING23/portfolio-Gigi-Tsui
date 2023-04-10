@@ -6,12 +6,10 @@ def main():
     subs = json.load(sub_fptr)
     print(subs,type(subs))
 
-    for k, v in subs.items(sub_fptr):
-        text=text.replace(k,v)
+    for x, y in subs.json(sub_fptr):
+        text=text.replace(x,y)
 
     
     fptr = open("betternews.txt", "w")
     fptr.write(text)
     fptr.close()
-
-main()
