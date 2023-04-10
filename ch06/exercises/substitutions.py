@@ -1,17 +1,17 @@
 import json
 
 def main():
-    news = open("assets/news.txt", "r").read().lower()
+    text = open("news.txt", "r").readlines()
     sub_fptr = open("subs.json","r")
-    sub = json.load()
-    print(sub,type(sub))
+    subs = json.load(sub_fptr)
+    print(subs,type(subs))
 
-    for k, v in sub.items(sub_fptr):
+    for k, v in subs.items(sub_fptr):
         text=text.replace(k,v)
 
     
     fptr = open("betternews.txt", "w")
-    fptr.write(news)
+    fptr.write(text)
     fptr.close()
 
 main()
