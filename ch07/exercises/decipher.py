@@ -25,10 +25,11 @@ def caesar_decrypt(text, shift):
 with open("encrypted.txt","w") as file:
     encryptedtext=file.write()
 
-shift=-3
-text="The quick brown fox jumps over the lazy dog"
+shift=5
 encrypted_text=caesar_decrypt(encryptedtext,shift)
+text="The quick brown fox jumps over the lazy dog"
 
 with open("decrypted.txt","w") as file:
     file.write(encrypted_text)
+
 
