@@ -8,3 +8,4 @@ class GenshinCharacterapi:
         r=requests.get(self.url)
         response = r.json()
         return response
+    
